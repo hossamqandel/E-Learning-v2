@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="edraak">ادراك</string>
+
+    <string name="password">كلمة المرور</string>
+    <string name="e_mail">البريد الالكتروني</string>
+    <string name="login">تسجيل دخول</string>
+    <string name="or">او</string>
+
+    <string name="sign_up">انشاء الحساب</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="age">العمر</string>
+    <string name="full_name">الإسم بالكامل</string>
+    <string name="don_t_have_an_account">لا تمتلك حساب بالفعل؟</string>
+
+    <string-array name="UserType">
+        <item>معلم</item>
+        <item>طالب</item>
+    </string-array>
+
+    <string name="course_name">اسم الكورس</string>
+    <string name="quiz_grade">درجة الإختبار</string>
+    <string name="project_grade">درجة المشروع</string>
+    <string name="attendance_grade">درجة الحضور</string>
+    <string name="create_a_new_course">انشاء كورس جديد</string>
+
+    <string name="instructor_control_panel">لوحة تحكم المعلم</string>
+    <string name="generate_attendance_code">انشاء كود الحضور</string>
+    <string name="create_new_quiz">انشاء اختبار جديد</string>
+    <string name="upload_material">ارفع المواد</string>
+    <string name="show_grades">اظهار الدرجات</string>
+    <string name="confirm">تاكيد</string>
+
+
+</resources>

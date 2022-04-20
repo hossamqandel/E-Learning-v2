@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_White"
+    tools:context=".Ui.Fragment.Authentication.Login.LoginFragment">
+
+    <EditText
+        android:id="@+id/login_Email_ET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_22sdp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/input_frame"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="@dimen/_8sdp"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/login_Password_ET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_22sdp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/input_frame"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="@dimen/_8sdp"
+        android:hint="@string/password"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:minEms="8"
+        android:paddingHorizontal="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_Email_ET" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_Login_BTN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/blue_Sky"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_12sdp"
+        app:cornerRadius="@dimen/_12sdp"
+        app:icon="@drawable/ic_arrow"
+        app:iconGravity="textStart"
+        app:iconPadding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/login_Password_ET"
+        app:layout_constraintStart_toStartOf="@+id/login_Password_ET"
+        app:layout_constraintTop_toBottomOf="@+id/login_Password_ET" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/_6sdp"
+        android:background="@color/dark_charcoal"
+        app:layout_constraintBottom_toBottomOf="@+id/uoOrLineTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/uoOrLineTV"
+        app:layout_constraintTop_toTopOf="@+id/uoOrLineTV" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/_6sdp"
+        android:background="@color/dark_charcoal"
+        app:layout_constraintBottom_toBottomOf="@+id/uoOrLineTV"
+        app:layout_constraintEnd_toStartOf="@+id/uoOrLineTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/uoOrLineTV" />
+
+    <TextView
+        android:id="@+id/uoOrLineTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:text="@string/or"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_Login_BTN" />
+
+    <TextView
+        android:id="@+id/login_DontHaveAccount_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:text="@string/don_t_have_an_account"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uoOrLineTV" />
+
+    <TextView
+        android:id="@+id/logIn_NavigateToSignUp_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textColor="@color/blue_Sky"
+        android:textSize="@dimen/_14sdp"
+        android:layout_marginStart="@dimen/_4sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/login_DontHaveAccount_TV"
+        app:layout_constraintStart_toEndOf="@+id/login_DontHaveAccount_TV"
+        app:layout_constraintTop_toTopOf="@+id/login_DontHaveAccount_TV" />
+
+    <ImageView
+        android:id="@+id/login_FacebookSign_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_facebook"
+        android:paddingHorizontal="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/login_DontHaveAccount_TV"
+        app:layout_constraintStart_toStartOf="@+id/login_DontHaveAccount_TV"
+        app:layout_constraintTop_toBottomOf="@+id/login_DontHaveAccount_TV" />
+
+    <ImageView
+        android:id="@+id/login_GoogleSign_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_google"
+        android:paddingHorizontal="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/login_FacebookSign_BTN"
+        app:layout_constraintStart_toEndOf="@+id/login_FacebookSign_BTN"
+        app:layout_constraintTop_toTopOf="@+id/login_FacebookSign_BTN" />
+</androidx.constraintlayout.widget.ConstraintLayout>

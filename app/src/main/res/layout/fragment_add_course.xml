@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Ui.Fragment.Instructor.AddCourse.AddCourseFragment">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:cardElevation="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ui_course"
+                android:layout_width="0dp"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/undraw_splash"/>
+
+            <EditText
+                android:id="@+id/addCourse_Name_ET"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="16dp"
+                android:hint="@string/course_name"
+                android:paddingHorizontal="@dimen/_8sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ui_course" />
+
+            <EditText
+                android:id="@+id/addCourse_QuizGrade_ET"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:hint="@string/quiz_grade"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:maxLength="3"
+                android:inputType="number"
+                android:digits="0123456789"
+                app:layout_constraintStart_toStartOf="@+id/addCourse_Name_ET"
+                app:layout_constraintTop_toBottomOf="@+id/addCourse_Name_ET" />
+
+
+            <EditText
+                android:id="@+id/addCourse_ProjectGrade_ET"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginStart="24dp"
+                android:gravity="center"
+                android:hint="@string/project_grade"
+                android:maxLength="3"
+                android:inputType="number"
+                android:digits="0123456789"
+                app:layout_constraintBottom_toBottomOf="@+id/addCourse_QuizGrade_ET"
+                app:layout_constraintStart_toEndOf="@+id/addCourse_QuizGrade_ET"
+                app:layout_constraintTop_toTopOf="@+id/addCourse_QuizGrade_ET" />
+
+            <EditText
+                android:id="@+id/addCourse_AttendanceGrade_ET"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginStart="18dp"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:hint="@string/attendance_grade"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingHorizontal="@dimen/_8sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/addCourse_QuizGrade_ET"
+                app:layout_constraintStart_toEndOf="@+id/addCourse_ProjectGrade_ET"
+                app:layout_constraintTop_toTopOf="@+id/addCourse_QuizGrade_ET" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addCourse__Confirm_BTN"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginBottom="@dimen/_45sdp"
+                app:cornerRadius="@dimen/_6sdp"
+                android:backgroundTint="@color/profile_board"
+                android:text="@string/create_a_new_course"
+                android:textSize="@dimen/_13sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/addCourse_Name_ET"
+                app:layout_constraintStart_toStartOf="@+id/addCourse_Name_ET" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

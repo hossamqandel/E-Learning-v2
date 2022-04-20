@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey"
+    tools:context=".Ui.Fragment.Common.Profile.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/profile_Board_IV"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_160sdp"
+        android:src="@drawable/profile_frame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_LOGOUT_BTN"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_logout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_IV"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/ic_male_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profile_Greet_Message_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="32dp"
+        android:text="WELCOME,"
+        android:textColor="@color/profile_board"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/profile_IV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_IV" />
+
+    <TextView
+        android:id="@+id/profile_NAME_TV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_Greet_Message_TV"
+        app:layout_constraintStart_toEndOf="@+id/profile_Greet_Message_TV"
+        app:layout_constraintTop_toTopOf="@+id/profile_Greet_Message_TV"
+        tools:text="Hossam" />
+
+    <ImageView
+        android:id="@+id/profile_VERIFY_TV"
+        android:layout_width="@dimen/_14sdp"
+        android:layout_height="@dimen/_14sdp"
+        android:layout_marginStart="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_NAME_TV"
+        app:layout_constraintStart_toEndOf="@+id/profile_NAME_TV"
+        app:layout_constraintTop_toTopOf="@+id/profile_NAME_TV"
+        android:src="@drawable/ic_verification"
+        android:visibility="gone"/>
+
+
+    <ImageView
+        android:id="@+id/profile_Email_IV"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_email"
+        app:layout_constraintStart_toStartOf="@+id/profile_Greet_Message_TV"
+        app:layout_constraintTop_toBottomOf="@+id/profile_Greet_Message_TV" />
+
+    <TextView
+        android:id="@+id/profile_EMAIL_TV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_Email_IV"
+        app:layout_constraintStart_toEndOf="@+id/profile_Email_IV"
+        app:layout_constraintTop_toTopOf="@+id/profile_Email_IV"
+        tools:text="google@gmail.com" />
+
+    <ImageView
+        android:id="@+id/profile_Phone_IV"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintStart_toStartOf="@+id/profile_Email_IV"
+        app:layout_constraintTop_toBottomOf="@+id/profile_Email_IV" />
+
+    <TextView
+        android:id="@+id/profile_PHONENUMBER_TV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_Phone_IV"
+        app:layout_constraintStart_toStartOf="@+id/profile_EMAIL_TV"
+        app:layout_constraintTop_toTopOf="@+id/profile_Phone_IV"
+        tools:text="01115849705" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/profile_CONTINUE_BTN"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/profile_board"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="Continue"
+        app:cornerRadius="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

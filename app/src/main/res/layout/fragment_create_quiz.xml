@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Ui.Fragment.Instructor.CreateQuiz.CreateQuizFragment"
+    android:background="@color/dark_gunmetal">
+
+    <EditText
+        android:id="@+id/quistion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/input_frame"
+        android:gravity="start|center_vertical"
+        android:layout_marginHorizontal="@dimen/_14sdp"
+        android:hint="Quistion?"
+        android:paddingHorizontal="@dimen/_6sdp"
+        />
+
+    <EditText
+        android:id="@+id/first_answer_ET"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/quistion"
+        app:layout_constraintTop_toBottomOf="@+id/quistion"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/input_frame"
+        android:gravity="start|center_vertical"
+        android:hint="First answer"
+        android:paddingHorizontal="@dimen/_6sdp"
+        />
+
+
+    <EditText
+        android:id="@+id/second_answer_ET"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/first_answer_ET"
+        app:layout_constraintTop_toBottomOf="@+id/first_answer_ET"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/input_frame"
+        android:gravity="start|center_vertical"
+        android:hint="Second Answer"
+        android:paddingHorizontal="@dimen/_6sdp"
+        />
+
+    <EditText
+        android:id="@+id/third_answer_ET"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/second_answer_ET"
+        app:layout_constraintTop_toBottomOf="@+id/second_answer_ET"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/input_frame"
+        android:gravity="start|center_vertical"
+        android:hint="Third answer"
+        android:paddingHorizontal="@dimen/_6sdp" />
+
+    <EditText
+        android:id="@+id/last_answer_ET"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/third_answer_ET"
+        app:layout_constraintTop_toBottomOf="@+id/third_answer_ET"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/input_frame"
+        android:gravity="start|center_vertical"
+        android:hint="Last Answer"
+        android:paddingHorizontal="@dimen/_6sdp"
+        />
+
+    <ImageView
+        android:id="@+id/clearFields_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:src="@drawable/ic_cleartext"
+        app:layout_constraintStart_toStartOf="@+id/last_answer_ET"
+        app:layout_constraintTop_toBottomOf="@+id/last_answer_ET" />
+
+    <ImageView
+        android:id="@+id/addQuistion_BTN"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="@+id/clearFields_BTN"
+        app:layout_constraintEnd_toEndOf="@+id/quistion"
+        app:layout_constraintTop_toTopOf="@+id/clearFields_BTN" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Add The Quistion"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/addQuistion_BTN"
+        app:layout_constraintStart_toStartOf="@+id/addQuistion_BTN"
+        app:layout_constraintTop_toBottomOf="@+id/addQuistion_BTN" />
+
+    <ImageView
+        android:id="@+id/removeLastQuistion_BTN"
+        android:layout_width="@dimen/_38sdp"
+        android:layout_height="@dimen/_38sdp"
+        android:src="@drawable/ic_remove_last_quis_added"
+        android:layout_marginStart="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/clearFields_BTN"
+        app:layout_constraintStart_toEndOf="@+id/clearFields_BTN"
+        app:layout_constraintTop_toTopOf="@+id/clearFields_BTN" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/uploadAssignment_BTN"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/profile_board"
+        android:text="Upload The Assignment"
+        android:textSize="@dimen/_12sdp"
+        app:cornerRadius="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="@+id/quistion"
+        app:layout_constraintStart_toStartOf="@+id/quistion"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="@+id/last_answer_ET"
+        app:layout_constraintEnd_toEndOf="@+id/quistion"
+        app:layout_constraintStart_toEndOf="@+id/second_answer_ET"
+        app:layout_constraintTop_toTopOf="@+id/first_answer_ET">
+
+        <RadioButton
+            android:id="@+id/radio_one"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp" />
+
+        <RadioButton
+            android:id="@+id/radio_two"
+            android:layout_width="wrap_content"
+            android:layout_height="85dp" />
+
+        <RadioButton
+            android:id="@+id/radio_three"
+            android:layout_width="wrap_content"
+            android:layout_height="94dp" />
+
+        <RadioButton
+            android:id="@+id/radio_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

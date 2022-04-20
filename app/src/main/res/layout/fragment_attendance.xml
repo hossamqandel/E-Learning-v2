@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Ui.Fragment.Instructor.AttendanceCode.AttendanceFragment">
+
+    <ImageView
+        android:id="@+id/attendance_BackPress_BTN"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:src="@drawable/ic_back"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/attendance_Generate_Code_BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/profile_board"
+        android:text="Generate Random"
+        app:cornerRadius="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/attendance_Code_TV"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="0dp"
+        tools:text="null"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/cultured"
+        app:layout_constraintBottom_toBottomOf="@+id/attendance_Generate_Code_BTN"
+        app:layout_constraintEnd_toStartOf="@+id/attendance_Generate_Code_BTN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/attendance_Generate_Code_BTN" />
+
+
+    <Button
+        android:id="@+id/attendance_Confirm_BTN"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        app:cornerRadius="@dimen/_8sdp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "804279471525",
+    "firebase_url": "https://edraak-v2-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "edraak-v2",
+    "storage_bucket": "edraak-v2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804279471525:android:807a0ce2efe323d4f9ac4c",
+        "android_client_info": {
+          "package_name": "com.android.e_learning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804279471525-t355b8oj8pbdlf2m0o4f1524lmgajili.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.e_learning",
+            "certificate_hash": "4c0e41390317eed097c2e9d1f324fc549d80293d"
+          }
+        },
+        {
+          "client_id": "804279471525-u1niojftvhicrnp82gn5cbcuo86f0nlq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPlkRq8jxHidOA9iXmqaTASirEmCTDUyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804279471525-u1niojftvhicrnp82gn5cbcuo86f0nlq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
